@@ -1,48 +1,17 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: win-64
-# created-by: conda 25.3.1
-# conda list -e > requirements.txt
-altair=5.5.0=pypi_0
-asttokens=3.0.0=py311haa95532_0
-attrs=25.3.0=pypi_0
-blinker=1.9.0=pypi_0
-bzip2=1.0.8=h2bbff1b_6
-ca-certificates=2025.2.25=haa95532_0
-cachetools=5.5.2=pypi_0
-certifi=2025.1.31=pypi_0
-charset-normalizer=3.4.1=pypi_0
-click=8.1.8=pypi_0
-colorama=0.4.6=py311haa95532_0
-comm=0.2.1=py311haa95532_0
-debugpy=1.8.11=py311h5da7b33_0
-decorator=5.1.1=pyhd3eb1b0_0
-executing=0.8.3=pyhd3eb1b0_0
-gitdb=4.0.12=pypi_0
-gitpython=3.1.44=pypi_0
-idna=3.10=pypi_0
-ipykernel=6.29.5=py311haa95532_1
-ipython=8.30.0=py311haa95532_0
-jedi=0.19.2=py311haa95532_0
-jinja2=3.1.6=pypi_0
-joblib=1.4.2=pypi_0
-jsonschema=4.23.0=pypi_0
-jsonschema-specifications=2024.10.1=pypi_0
-jupyter_client=8.6.3=py311haa95532_0
-jupyter_core=5.7.2=py311haa95532_0
-libffi=3.4.4=hd77b12b_1
-libsodium=1.0.18=h62dcd97_0
-markupsafe=3.0.2=pypi_0
-matplotlib-inline=0.1.6=py311haa95532_0
-narwhals=1.35.0=pypi_0
-nest-asyncio=1.6.0=py311haa95532_0
-numpy=2.2.4=pypi_0
-openssl=3.0.16=h3f729d1_0
-packaging=24.2=py311haa95532_0
-pandas=2.2.3=pypi_0
-parso=0.8.4=py311haa95532_0
-pillow=11.2.1=pypi_0
-pip=25.0=py311haa95532_0
-platformdirs=4.3.7=py311haa95532_0
-plotly=6.0.1=pypi_0
-
+# ─── core framework ─────────────────────────────
+streamlit
+# ─── data wrangling & science ───────────────────
+pandas
+numpy
+scikit-learn
+scipy
+# ─── visualisation ──────────────────────────────
+altair
+plotly
+pydeck         # only if you use st.pydeck_chart
+# ─── model persistence / utils ──────────────────
+joblib
+# ─── file & data formats ────────────────────────
+pyarrow        # lets pandas read parquet/feather
+# ─── web / api helpers (optional) ───────────────
+requests
